@@ -14,3 +14,7 @@ body {
     display: none;
 }
 
+.active {
+    opacity: 50%;
+}
+

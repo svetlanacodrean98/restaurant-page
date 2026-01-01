@@ -1,13 +1,13 @@
-export function initialLoad() { 
-    const content = document.getElementById("content")
+import { loadHome } from "./home.js"
+import { loadAbout } from "./about.js"
+import { loadMenu } from "./menu.js"
 
-    const title = document.createElement("h1")
-    title.innerHTML = "Eat at Svetlana's"
-    content.appendChild(title)
-
-    const description = document.createElement("h2")
-    description.innerHTML = "Svetlana has a variety of foods prepared for you! From russian cuisine to original recipes, cooked with love!"
-    content.appendChild(description)
+export function initialLoad() {
+    loadHome()
+    loadAbout()
+    loadMenu()
+    document.getElementById("home").style.display = "block"
+    document.getElementById("homebtn").classList.add("active")
 }
 
 export function openPage(btnId, tabId) {

@@ -1,5 +1,6 @@
 import "./styles.css"
-import {initialLoad, openPage} from "./module.js"
+import { initialLoad, openPage } from "./module.js"
+
 
 window.onload = initialLoad
 
